@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "start": "deno run --watch --allow-net --allow-env --env-file=.env main.ts"
+  },
+  "imports": {
+    "discord-api-types": "npm:discord-api-types@^0.37.115"
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 69420,
+    "proseWrap": "preserve",
+    "semiColons": true,
+    "singleQuote": true,
+    "useTabs": false
+  }
+}
