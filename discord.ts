@@ -1,4 +1,4 @@
-import { RESTPostAPIWebhookWithTokenJSONBody } from 'discord-api-types/v10';
+import { MessageFlags, RESTPostAPIWebhookWithTokenJSONBody } from 'discord-api-types/v10';
 import { getRandomCatImage } from './cat.ts';
 
 export async function executeWebhook() {
@@ -18,7 +18,7 @@ export async function executeWebhook() {
         filename: 'cat.jpg',
       },
     ],
-    flags: 1 << 12,
+    flags: MessageFlags.SuppressNotifications,
   };
 
   formData.append('payload_json', JSON.stringify(payload));
