@@ -18,6 +18,7 @@ export async function executeWebhook() {
         filename: 'cat.jpg',
       },
     ],
+    flags: 1 << 12,
   };
 
   formData.append('payload_json', JSON.stringify(payload));
